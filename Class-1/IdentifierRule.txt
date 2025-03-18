@@ -1,0 +1,15 @@
+What is Identifier?
+Name in JS program we called - Identifier
+Identifier might be - variable name, 
+                      function name,
+                      class name, 
+                      object name
+Identifier Rules:
+1.Identifier should contains:  a - z 
+                               A-Z
+                               0-9,
+                               _,$
+2.should not start with digit  (0-9)
+3.should not contain any special char/symbols
+4.should not use keyword as Identifier
+5.Identifier are cas sensitive.

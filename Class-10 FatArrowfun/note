@@ -1,0 +1,11 @@
+adv of ()=>{}
+
+js -->()=>{}  /fat arrow function
+java -->()=>{}  /lambda expression
+python -> lambda a,b:a+b
+
+=================================
+1.concise code/ shorter code
+2. implicit return
+3.this keyword - return empty onject
+4.function hoisting - conflicts are resolved

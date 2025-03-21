@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Events</title>
+<style>
+    .button {
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        color: white;
+    }
+    #mouseoverButton {
+        background-color: blue;
+    }
+    #mouseoutButton {
+        background-color: red;
+    }
+    #clickButton {
+        background-color: red;
+    }
+    #dblclickButton {
+        background-color: red;
+    }
+    #focusInput {
+        padding: 5px;
+    }
+    #blurInput {
+        padding: 5px;
+    }
+</style>
+</head>
+<body>
+    <h2>Javascript Events</h2>
+    <div>
+        OnMouseover:<br>
+        mouse over to change button background color<br>
+        <button class="button" id="mouseoverButton" onmouseover="changeBackgroundColor('mouseoverButton', 'darkblue')" onmouseout="changeBackgroundColor('mouseoverButton', 'blue')">Mouse over</button>
+    </div>
+    <br>
+    <div>
+        OnMouseout:<br>
+        mouse over to change button background color<br>
+        <button class="button" id="mouseoutButton" onmouseover="changeBackgroundColor('mouseoutButton', 'darkred')" onmouseout="changeBackgroundColor('mouseoutButton', 'red')">Mouse Out</button>
+    </div>
+    <div>
+        Onclick:<br>
+        Click to change button background color<br>
+        <button class="button" id="clickButton" onclick="changeBackgroundColor('clickButton', 'darkred')">Onclick</button>
+    </div>
+   <div>
+        Ondblclick:<br>
+        Double Click to change button background color<br>
+        <button class="button" id = "dblclickButton" ondblclick="changeBackgroundColor('dblclickButton', 'darkred')">ondblclick</button>
+    </div>
+    <div>
+        onfocus:<br>
+        Click to change Input background color<br>
+        <input type="text" id="focusInput" onfocus="changeInputBackgroundColor('focusInput', 'lightgray')" onblur="changeInputBackgroundColor('focusInput', 'white')">
+    </div>
+    <div>
+        onblur:<br>
+        Change Lower case to uppper case onblur Events<br>
+        <input type = "text" id = "blurInput" onblur="convertToUpperCase('blurInput')">
+    </div>
+
+<script>
+    function changeBackgroundColor(elementId, color) {
+        document.getElementById(elementId).style.backgroundColor = color;
+    }
+    function changeInputBackgroundColor(elementId, color) {
+        document.getElementById(elementId).style.backgroundColor = color;
+    }
+    function convertToUpperCase(elementId){
+        var inputField = document.getElementById(elementId);
+        inputField.value = inputField.value.toUpperCase();
+    }
+</script>
+
+</body>
+</html>

@@ -1,7 +1,6 @@
 <html>
     <head>
         <title>JavaScript Events</title>
-    </head>
     <style>
     .button{
         padding: 10px 20px;
@@ -27,19 +26,41 @@
         #onblur button {
             padding: 5px;
         }
-        </style>
-        <body>
-            <h2>         JavaScript Events</h2>
-            <div>
-                onMouseover:<br>
-                mouse over to change button background color<br>
-                <button class="button" onmouseover="changebackgroundcolor"
-            </div>
-        </body>
-        <!-- <div>
-    <button class="btn1" onmouseover="changecolor"
-            style="background-color: blue;">mouseOver</button><br>
-        </div> -->
+    </style>
+    </head>
+    <body>
+        <h2>Javascript Events</h2>
+        <div>
+            OnMouseover:<br>
+            mouse over to change button background color<br>
+            <button class="button" id="mouseoverButton" onmouseover="changeBackgroundColor('mouseoverButton', 'darkblue')" onmouseout="changeBackgroundColor('mouseoverButton', 'blue')">Mouse over</button>
+        </div>
+        <br>
+        <div>
+            OnMouseout:<br>
+            mouse over to change button background color<br>
+            <button class="button" id="mouseoutButton" onmouseover="changeBackgroundColor('mouseoutButton', 'darkred')" onmouseout="changeBackgroundColor('mouseoutButton', 'red')">Mouse Out</button>
+        </div>
+        <div>
+            Onclick:<br>
+            Click to change button background color<br>
+            <button class="button" id="clickButton" onclick="changeBackgroundColor('clickButton', 'darkred')">Onclick</button>
+        </div>
+       <div>
+            Ondblclick:<br>
+            Double Click to change button background color<br>
+            <button class="button" id = "dblclickButton" ondblclick="changeBackgroundColor('dblclickButton', 'darkred')">ondblclick</button>
+        </div>
+        <div>
+            onfocus:<br>
+            Click to change Input background color<br>
+            <input type="text" id="focusInput" onfocus="changeInputBackgroundColor('focusInput', 'lightgray')" onblur="changeInputBackgroundColor('focusInput', 'white')">
+        </div>
+        <div>
+            onblur:<br>
+            Change Lower case to uppper case onblur Events<br>
+            <input type = "text" id = "blurInput" onblur="convertToUpperCase('blurInput')">
+        </div>
+<script sc="/colors.js" type="text/javascript"></script>
     </body>
-    <script src="./colors.js" type="text/javascript"></script>
 </html>

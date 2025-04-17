@@ -1,0 +1,11 @@
+Reusing the existing class functionality
+and adding/extending new features.
+
+
+or
+Inheriting the properties from one to another class.
+
+class Parent{}
+class Child extends Parent{}
+
+main objective of Inheritance is - Code Reusablity
